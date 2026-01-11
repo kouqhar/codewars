@@ -48,3 +48,17 @@ The binary number returned should be a string.
 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 
 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+
+# Summing a number's digits
+
+**Description:**
+
+Write a function which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.
+
+For example: (Input --> Output)
+
+- 10 --> 1
+- 99 --> 18
+- -32 --> 5
+
+Let's assume that all numbers in the input will be integer values.
