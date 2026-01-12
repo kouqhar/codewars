@@ -44,3 +44,44 @@ Examples (Input --> Output)
 **Description:**
 
 Now you have to write a function that takes an argument and returns the square of it.
+
+## Remove the minimum
+
+**Description:**
+
+The museum of incredibly dull things
+The museum of incredibly dull things wants to get rid of some exhibits. Miriam, the interior architect, comes up with a plan to remove the most boring exhibits. She gives them a rating, and then removes the one with the lowest rating.
+
+However, just as she finished rating all exhibits, she's off to an important fair, so she asks you to write a program that tells her the ratings of the exhibits after removing the lowest one. Fair enough.
+
+**Task**
+
+Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list.
+
+Don't change the order of the elements that are left.
+
+Examples
+
+- Input: [1,2,3,4,5], output = [2,3,4,5]
+- Input: [5,3,2,1,4], output = [5,3,2,4]
+- Input: [2,2,1,2,1], output = [2,2,2,1]
+
+##
+
+**Description:**
+
+The first input array is the key to the correct answers to an exam, like ["a", "a", "b", "d"]. The second one contains a student's submitted answers.
+
+The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer, represented as an empty string (in C the space character is used).
+
+If the score < 0, return 0.
+
+For example:
+
+| Correct answer | Student's answer | Result |
+| -------------- | ---------------- | ------ |
+
+- ["a", "a", "b", "b"] ["a", "c", "b", "d"] → 6
+- ["a", "a", "c", "b"] ["a", "a", "b", "" ] → 7
+- ["a", "a", "b", "c"] ["a", "a", "b", "c"] → 16
+- ["b", "c", "b", "a"] ["" , "a", "a", "c"] → 0
