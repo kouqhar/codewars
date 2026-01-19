@@ -34,3 +34,18 @@ Write a function to find if a number is lucky or not. If the sum of all digits i
 1892376 => 1+8+9+2+3+7+6 = 36. 36 is divisible by 9, hence number is lucky.
 
 Function will return true for lucky numbers and false for others.
+
+## Vowel Remover
+
+Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+
+Examples
+
+- "hello" --> "hll"
+- "codewars" --> "cdwrs"
+- "goodbye" --> "gdby"
+- "HELLO" --> "HELLO"
+
+don't worry about uppercase vowels
+
+y is not considered a vowel for this kata
