@@ -27,14 +27,6 @@ Input : ===> [2,4,5,4,2]
 
 Output : ===> 5
 
-## Lucky number
-
-Write a function to find if a number is lucky or not. If the sum of all digits is 0 or multiple of 9 then the number is lucky.
-
-1892376 => 1+8+9+2+3+7+6 = 36. 36 is divisible by 9, hence number is lucky.
-
-Function will return true for lucky numbers and false for others.
-
 ## Vowel Remover
 
 Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
