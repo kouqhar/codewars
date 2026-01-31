@@ -22,6 +22,7 @@ Array.prototype.even = function () {
 Array.prototype.odd = function () {
   return this.filter((num) => num % 2 !== 0);
 };
+
 console.log(numbers.square()); // [1, 4, 9, 16, 25]
 console.log(numbers.cube()); // [1, 8, 27, 64, 125]
 console.log(numbers.sum()); // 15
