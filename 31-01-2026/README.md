@@ -67,7 +67,7 @@ Signature will always contain 3 numbers; n will always be a non-negative number;
 
 If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata[http://www.codewars.com/kata/fibonacci-tribonacci-and-friends]
 
-[Personal thanks to Professor Jim Fowler[https://www.coursera.org/instructor/jimfowler] on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
+[Personal thanks to Professor Jim Fowler[https://www.coursera.org/instructor/jimfowler] on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion]
 
 ## Write Number in Expanded Form
 
@@ -82,3 +82,17 @@ You will be given a number and you will need to return it as a string in Expande
 NOTE: All numbers will be whole numbers greater than 0.
 
 If you liked this kata, check out part 2!![https://www.codewars.com/kata/write-number-in-expanded-form-part-2]
+
+## Unique In Order
+
+Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
+
+For example:
+
+unique_in_order('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+
+unique_in_order('ABBCcAD') == ['A', 'B', 'C', 'c', 'A', 'D']
+
+unique_in_order([1, 2, 2, 3, 3]) == [1, 2, 3]
+
+unique_in_order((1, 2, 2, 3, 3)) == [1, 2, 3]

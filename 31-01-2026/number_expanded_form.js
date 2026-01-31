@@ -1,5 +1,6 @@
 const expandedForm = (arr) => {
-  let [pow, decimal, arr, len] = [[], [], arr.toString().split(""), arr.length];
+  arr = arr.toString().split("");
+  let [pow, decimal, len] = [[], [], arr.length];
 
   for (let i = 0; i <= len - 1; i++) {
     pow.unshift(i);
@@ -15,4 +16,5 @@ const expandedForm = (arr) => {
     .split(",")
     .join(" + ");
 };
+
 console.log(expandedForm(70304));
