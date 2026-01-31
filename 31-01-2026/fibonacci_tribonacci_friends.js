@@ -11,9 +11,7 @@ const Xbonacci = (signature, n) => {
         let nextValue = arr.reduce((acc, curr) => acc + curr, 0);
         orgArr.push(nextValue);
         arr = [];
-      } else {
-        return 1;
-      }
+      } else return 1;
     }
   }
   return orgArr;
