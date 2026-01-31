@@ -1,7 +1,6 @@
 const tribonacci = (signature, n) => {
   let orgArr = [...signature];
-  let len = orgArr.length;
-  let arr = [];
+  let [len, arr] = [orgArr.length, []];
 
   if (n === 0) return [];
   else if (n < 3) orgArr = orgArr.slice(0, n);
@@ -12,9 +11,7 @@ const tribonacci = (signature, n) => {
         let nextValue = arr.reduce((acc, curr) => acc + curr, 0);
         orgArr.push(nextValue);
         arr = [];
-      } else {
-        return 1;
-      }
+      } else return 1;
     }
   }
   return orgArr;
