@@ -45,3 +45,9 @@ The first value in the given array corresponds to the time for segment 1, the se
 To calculate the speed (in meters per second) for a segment, divide the distance by the time.
 
 Return "The luger's fastest speed was X m/s on segment Y.". Where X is the fastest speed, rounded to two decimal places, and Y is the segment number where the fastest speed occurred.
+
+## 2026 Winter Games Day 7: Speed Skating
+
+Given two arrays representing the lap times (in seconds) for two speed skaters, return the lap number where the difference in lap times is the largest.
+
+The first element of each array corresponds to lap 1, the second to lap 2, and so on.
