@@ -48,3 +48,19 @@ Given an array of jump scores for athletes, calculate their start delay times fo
 The athlete with the highest jump score starts first (0 second delay). All other athletes start later based on how far behind their jump score is compared to the best jump.
 
 To calculate the delay for each athlete, subtract the athlete's jump score from the best overall jump score and multiply the result by 1.5. Round the delay up to the nearest integer.
+
+## 2026 Winter Games Day 14: Ski Mountaineering
+
+Given the snow depth and slope of a mountain, determine if there's an avalanche risk.
+
+The snow depth values are "Shallow", "Moderate", or "Deep".
+
+Slope values are "Gentle", "Steep", or "Very Steep".
+
+Return "Safe" or "Risky" based on this table:
+
+|              | "Shallow" | "Moderate" | "Deep"  |
+| ------------ | :-------: | :--------: | :-----: |
+| "Gentle"     |  "Safe"   |   "Safe"   | "Safe"  |
+| "Steep"      |  "Safe"   |  "Risky"   | "Risky" |
+| "Very Steep" |  "Safe"   |  "Risky"   | "Risky" |
