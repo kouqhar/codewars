@@ -28,3 +28,7 @@ If the given value is the boolean true (the groundhog saw its shadow), return "L
 If the value is the boolean false (the groundhog did not see its shadow), return "It's going to be an early spring.".
 
 If the value is anything else (the groundhog did not show up), return "No prediction this year.".
+
+## String Mirror
+
+Given a string, return a new string that consists of the given string with a reversed copy of itself appended to the end of it.
