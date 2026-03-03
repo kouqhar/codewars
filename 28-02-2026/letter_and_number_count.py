@@ -13,8 +13,6 @@ def count_letters_and_numbers(s):
 
     return f"The string has {len(letters)} {sStr} and {len(digits)} {dStr}."
 
-
-
 print(count_letters_and_numbers("helloworld123"))
 print(count_letters_and_numbers("A1!"))
 print(count_letters_and_numbers("12345"))
