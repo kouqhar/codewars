@@ -19,3 +19,9 @@ Weekdays are business days (Monday through Friday).
 Weekends are not business days (Saturday and Sunday).
 
 Include both the start and end dates when counting.
+
+## Flattened
+
+Given an array, determine if it is flat.
+
+An array is flat if none of its elements are arrays.
