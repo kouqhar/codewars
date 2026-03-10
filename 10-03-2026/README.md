@@ -27,3 +27,7 @@ Spaces are only allowed:
 Optionally, the value can end with a semi-colon (";").
 
 For example, "hsl(240, 50%, 50%)" is a valid HSL value.
+
+## Array Sum
+
+Given an array of numbers, return the sum of all the numbers.
