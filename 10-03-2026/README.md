@@ -31,3 +31,7 @@ For example, "hsl(240, 50%, 50%)" is a valid HSL value.
 ## Array Sum
 
 Given an array of numbers, return the sum of all the numbers.
+
+## Array Insertion
+
+Given an array, a value to insert into the array, and an index to insert the value at, return a new array with the value inserted at the specified index.
