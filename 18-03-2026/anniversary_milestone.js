@@ -15,7 +15,7 @@ function getMilestone(years) {
     .filter((elem) => elem < years)
     .at(-1);
 
-  return chart[years] ? chart[years] : chart[position] || chart[0];
+  return chart[years] || chart[position] || chart[0];
 }
 
 console.log(getMilestone(0)); // "Newlyweds".
