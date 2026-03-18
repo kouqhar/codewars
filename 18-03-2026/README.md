@@ -28,3 +28,7 @@ You are required to write a function that takes a URL to a published Google Doc 
 - Construct a 2D grid where the minimum coordinate value is 0 and there is no maximum limit.
 - Fill the grid with the specified Unicode characters at their respective $(x, y)$ positions, leaving all other spaces blank.
 - Print the grid in a fixed-width font so that the characters align to form a sequence of uppercase letters.
+
+## Evenly Divisible
+
+Given two integers, determine if you can evenly divide the first one by the second one.
