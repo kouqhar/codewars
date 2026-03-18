@@ -49,3 +49,11 @@ Given an integer representing the number of years a couple has been married, ret
 | "70"            | "Platinum"  |
 
 - If they haven't reached the first milestone, return "Newlyweds".
+
+## Largest Number
+
+Given a string of numbers separated by various punctuation, return the largest number.
+
+The given string will only contain numbers and separators.
+
+Separators can be commas (","), exclamation points ("!"), question marks ("?"), colons (":"), or semi-colons (";").
