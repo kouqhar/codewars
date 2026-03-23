@@ -19,3 +19,9 @@ Return:
 "Medium" if the average is 1.75 to 2.5.
 
 "Dark" if the average is greater than 2.5.
+
+## No Consecutive Repeats
+
+Given a string, determine if it has no repeating characters.
+
+A string has no repeats if it does not have the same character two or more times in a row.
