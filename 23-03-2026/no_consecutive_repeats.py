@@ -1,8 +1,8 @@
 def has_no_repeats(s):
-    noRepeats = True;
+    noRepeats, sLength = True, len(s);
 
-    for i in range(len(s)):
-        if i + 1 < len(s):
+    for i in range(sLength):
+        if i + 1 < sLength:
             if s[i] == s[i + 1]:
                 noRepeats = False;
                 break;
