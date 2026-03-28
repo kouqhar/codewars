@@ -11,7 +11,7 @@ def get_movie_night_cost(day, showtime, number_of_tickets):
         return f"${5.00 * number_of_tickets:.2f}"
 
     total = cost * number_of_tickets
-    matinee = total - (2.00 * number_of_tickets) if (period == "pm" and int(hour)) < 5 else total
+    matinee = total - (2.00 * number_of_tickets) if ((period == "pm" and int(hour)) or period == "am") < 5 else total
 
     return f"${matinee:.2f}"
 
