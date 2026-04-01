@@ -28,3 +28,9 @@ You read at least five pages.
 If all of the given days are successful, return "Resolution on track: N day streak." Where N is the number of successful days.
 
 If one or more days is not a success, return "Resolution failed on day X: N day streak.". Where X is the day number of the first unsuccessful day, and N is the number of successful days before the first unsuccessful day.
+
+## Nth Fibonacci Number
+
+Given an integer n, return the nth number in the fibonacci sequence.
+
+The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. The first 10 numbers in the sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
