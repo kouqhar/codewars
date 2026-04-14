@@ -1,4 +1,4 @@
-## c
+## Next Bingo Number
 
 Given a bingo number, return the next bingo number sequentially.
 
