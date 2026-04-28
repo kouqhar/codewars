@@ -1,8 +1,7 @@
 function nthFibonacci(n) {
   const fibArr = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
 
-  if (n <= 11) return fibArr[n - 1];
-  else for (let i = 11; i < n; i++) fibArr.push(fibArr[i - 1] + fibArr[i - 2]);
+  if (n > 11) for (let i = 11; i < n; i++) fibArr.push(fibArr[i - 1] + fibArr[i - 2]);
 
   return fibArr[n - 1];
 }
