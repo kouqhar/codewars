@@ -1,5 +1,6 @@
 def get_word_score(word):
-    wordCase, case_unit = word.lower(), 96
+    wordCase, case_unit = word.lower(), 96 # For lowercase letters
+    # wordCase, case_unit = word.upper(), 64 # For uppercase letters
 
 # Method 1: Solution using a for loop:
     mth1_score = 0

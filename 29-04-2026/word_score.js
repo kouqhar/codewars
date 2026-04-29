@@ -2,7 +2,8 @@ function getWordScore(word) {
   // Convert the word to lowercase and set the case unit to 96 (since 'a' has a code point of 97).
   // Dynamically change the case unit based on the first character of the word to handle both uppercase and lowercase letters.
 
-  let [wordCase, caseUnit] = [word.toLowerCase().replace(/\s/g, ""), 96];
+  let [wordCase, caseUnit] = [word.toLowerCase().replace(/\s/g, ""), 96]; // For lower case
+  // let [wordCase, caseUnit] = [word.toUpperCase().replace(/\s/g, ""), 64]; // For upper case
 
   // Method 1:  Solution using a for loop:
   let mth1Score = 0;
