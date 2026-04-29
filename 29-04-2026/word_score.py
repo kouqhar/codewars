@@ -1,4 +1,5 @@
 def get_word_score(word):
+    # Convert the word to lower/upper case and set the case unit to 96/64 (since 'a'=97 and 'A'=65).
     wordCase, case_unit = word.lower(), 96 # For lowercase letters
     # wordCase, case_unit = word.upper(), 64 # For uppercase letters
 
