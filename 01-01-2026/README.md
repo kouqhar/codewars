@@ -17,3 +17,11 @@ Initials should be made uppercase.
 Initials should be separated by dots.
 
 For example, "Tommy Millwood" returns "T.M.".
+
+## Last Letter
+
+Given a string, return the letter from the string that appears last in the alphabet.
+
+If two or more letters tie for the last in the alphabet, return the first one.
+
+Ignore all non-letter characters.
