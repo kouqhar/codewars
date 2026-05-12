@@ -18,3 +18,7 @@ Multiply each digit by 1 or 3, alternating (multiply the first digit by
 Given an array of objects, each with a "name" and "age" property, return an array containing the name of the oldest person.
 
 If multiple people share the oldest age, return all of their names in the order they appear in the input.
+
+## Character Frequency
+
+Given a string, return an object (JavaScript) or dictionary (Python) mapping each character to the number of times it appears.
