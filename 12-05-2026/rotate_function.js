@@ -19,5 +19,5 @@ console.log(maxRotateFunction([1, 2, 3, 4, 5])); // 40
 console.log(maxRotateFunction([1, 2, 3, 4, 5, 6])); // 70
 console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7])); // 112
 console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7, 8])); // 168
-console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7, 8, 9])); // 252
-console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 360
+console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7, 8, 9])); // 240
+console.log(maxRotateFunction([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 330
