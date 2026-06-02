@@ -7,12 +7,10 @@ def fizz_buzz_count(start, end):
     for i in range(start, end + 1):
         elementIsFizz, elementIsBuzz = i % 3 == 0, i % 5 == 0
 
-        if elementIsFizz and elementIsBuzz:
+        if elementIsFizz:
             numArray["fizz"] += 1
-            numArray["buzz"] += 1
-        elif elementIsFizz:
-            numArray["fizz"] += 1
-        elif elementIsBuzz:
+        
+        if elementIsBuzz:
             numArray["buzz"] += 1
 
     return numArray
