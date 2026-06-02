@@ -7,11 +7,8 @@ function fizzBuzzCount(start, end) {
   for (let i = start; i <= end; i++) {
     const [elementIsFizz, elementIsBuzz] = [i % 3 === 0, i % 5 === 0];
 
-    if (elementIsFizz && elementIsBuzz) {
-      numArray["fizz"] += 1;
-      numArray["buzz"] += 1;
-    } else if (elementIsFizz) numArray["fizz"] += 1;
-    else if (elementIsBuzz) numArray["buzz"] += 1;
+    if (elementIsFizz) numArray["fizz"] += 1;
+    if (elementIsBuzz) numArray["buzz"] += 1;
   }
 
   return numArray;
