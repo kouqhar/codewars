@@ -5,3 +5,7 @@ Given a 2D array where each inner array contains (in this order) an idea name, a
 Calculate the expected time to completion for each idea using the following formula:
 
 - expected = ((optimistic + 4 * realistic + pessimistic) / 6) * length of idea name
+
+## HTML Content Extractor
+
+Given a string of HTML, return the plain text content with all tags removed.
