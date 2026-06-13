@@ -35,18 +35,20 @@ def get_zone_violations(grid):
 def violation_check(arr, neighbors, violationsArr, rowLen):
     up, down, left, right, curr = neighbors
     arrLen = len(arr)
+    currRow, currCol = [curr // rowLen, curr % rowLen];
+    result = [currRow, currCol];
 
     if up >= 0 and arr[up] in violationsArr:
-        return [curr // rowLen, curr % rowLen]
+        return result
     
     if down >= 0 and arrLen > down and arr[down] in violationsArr: 
-        return [curr // rowLen, curr % rowLen]
+        return result
     
     if left >= 0 and arr[left] in violationsArr:
-        return [curr // rowLen, curr % rowLen]
+        return result
     
     if right >= 0 and arrLen > right and arr[right] in violationsArr:
-        return [curr // rowLen, curr % rowLen]
+        return result
     
 print(get_zone_violations([["R", "C"], ["", "C"]])) # [[0, 0], [0, 1]].
 print(get_zone_violations([["", "i"], ["", "R"], ["R", "I"]])) # [[0, 1], [1, 1]].
