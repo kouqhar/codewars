@@ -1,10 +1,10 @@
 function getZoneViolations(grid) {
   const adjacent_lookup = {
-    i: ["R", "I"],
-    A: ["C"],
-    R: ["i", "C"],
-    I: ["i"],
-    C: ["R", "A"],
+    i: new Set(["R", "I"]),
+    A: new Set(["C"]),
+    R: new Set(["i", "C"]),
+    I: new Set(["i"]),
+    C: new Set(["R", "A"]),
   };
 
   const [rowLen, arrToStr, violations] = [grid[0].length, grid.flat(1), []];
@@ -17,15 +17,11 @@ function getZoneViolations(grid) {
 
     const neighbors = [i - rowLen, i + rowLen, left, right, i];
     const currChar = arrToStr[i];
+    const violationsArr = adjacent_lookup[currChar];
 
     if (currChar == "") continue;
-    if (Object.keys(adjacent_lookup).includes(currChar)) {
-      const check = ViolationCheck(
-        arrToStr,
-        neighbors,
-        adjacent_lookup[currChar],
-        rowLen,
-      );
+    if (violationsArr) {
+      const check = ViolationCheck(arrToStr, neighbors, violationsArr, rowLen);
 
       if (check) violations.push(check);
     }
@@ -39,13 +35,10 @@ const ViolationCheck = (arr, neighbors, violationsArr, rowLen) => {
   const [currRow, currCol] = [Math.floor(curr / rowLen), curr % rowLen];
   const result = [currRow, currCol];
 
-  if (up >= 0 && violationsArr.includes(arr[up])) return result;
-
-  if (down >= 0 && violationsArr.includes(arr[down])) return result;
-
-  if (left >= 0 && violationsArr.includes(arr[left])) return result;
-
-  if (right >= 0 && violationsArr.includes(arr[right])) return result;
+  if (up >= 0 && violationsArr.has(arr[up])) return result;
+  if (down >= 0 && violationsArr.has(arr[down])) return result;
+  if (left >= 0 && violationsArr.has(arr[left])) return result;
+  if (right >= 0 && violationsArr.has(arr[right])) return result;
 };
 
 console.log(

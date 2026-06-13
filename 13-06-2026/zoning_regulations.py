@@ -1,10 +1,10 @@
 def get_zone_violations(grid):
     adjacent_lookup = {
-        "i": ["R", "I"],
-        "A": ["C"],
-        "R": ["i", "C"],
-        "I": ["i"],
-        "C": ["R", "A"],
+        "i": {"R", "I"},
+        "A": {"C"},
+        "R": {"i", "C"},
+        "I": {"i"},
+        "C": {"R", "A"},
     }
 
     rowLen, violations = len(grid[0]), [] 
@@ -21,12 +21,13 @@ def get_zone_violations(grid):
             right = -1
 
         neighbors, currChar = [i - rowLen, i + rowLen, left, right, i], arr_to_str[i]
+        violationsArr = adjacent_lookup.get(currChar)
 
         if currChar == "":
             continue
 
-        if currChar in adjacent_lookup.keys():
-            check = violation_check(arr_to_str, neighbors, adjacent_lookup[currChar], rowLen)
+        if violationsArr:
+            check = violation_check(arr_to_str, neighbors, violationsArr, rowLen)
 
             violations.append(check) if check else None
             
